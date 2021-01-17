@@ -1,0 +1,10 @@
+postgres:
+  image: postgres:11.10
+  container_name: postgres-playground
+  ports:
+    - 5432:5432
+  environment:
+    POSTGRES_USER: postgres # この設定は省略可能
+    POSTGRES_PASSWORD: password
+    POSTGRES_DB: custom
+
